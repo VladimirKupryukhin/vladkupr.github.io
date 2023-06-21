@@ -1,0 +1,14 @@
+.setup-navigation-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: teal;
+}
+
+.button-margin {
+  margin-left: 5px;
+  margin-right: 5px;
+}

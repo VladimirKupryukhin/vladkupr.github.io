@@ -1,0 +1,14 @@
+@import '../../assets/scss/global_variables.scss';
+
+.setup-navigation-bar{
+    display: flex;
+    justify-content: center;
+    
+    background-color: $terminal-background;
+}
+
+
+.button-margin{
+    margin-left: 5px;
+    margin-right: 5px;
+}

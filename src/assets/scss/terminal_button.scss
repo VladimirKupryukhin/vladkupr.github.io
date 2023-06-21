@@ -1,0 +1,22 @@
+@import '../../assets/scss/global_variables.scss';
+
+
+.text-color:hover{
+    color: $terminal-background;
+}
+
+.container-bg{
+    display: inline-block;
+}
+
+.container-bg:hover{
+    background-color: $terminal-text-color;
+    display: inline-block;
+}
+
+
+.hyperlink{
+    color: inherit; 
+    text-decoration: none;
+}
+
