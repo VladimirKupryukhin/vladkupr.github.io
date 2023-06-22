@@ -10,3 +10,15 @@
       -ms-flex-pack: left;
           justify-content: left;
 }
+
+.photo-space {
+  padding-left: 50px;
+}
+
+.skills-word {
+  margin-top: 50px;
+}
+
+.image-size {
+  max-height: 96px;
+}

@@ -63,7 +63,7 @@
                 }
 
 
-                for (let index = 0; index < (content.clientHeight - 28 -4) / 35; index++) {
+                for (let index = 0; index < (content.clientHeight - 24) / 35; index++) {
                     verticalLine += "|"
                 }
 

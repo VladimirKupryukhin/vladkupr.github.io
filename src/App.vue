@@ -5,19 +5,19 @@
 </script>
 
 <template>
-    <!-- <TheNavbar></TheNavbar>
-    <WhoAmI></WhoAmI> -->
-    <TerminalBorder > 
+    <TheNavbar></TheNavbar>
+    <WhoAmI></WhoAmI>
+    <!-- <TerminalBorder > 
 
         <div style="border: 0px solid orange">
           
           <img src="./assets/images/redSquare.png" >
           <img src="./assets/images/redSquare.png" >
           <img src="./assets/images/redSquare.png" >
-          <img src="./assets/images/redSquare.png" >
+          <img src="./assets/images/vlad.png" >
         </div>
 
-    </TerminalBorder>
+    </TerminalBorder> -->
 
 </template>
 
