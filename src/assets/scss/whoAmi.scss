@@ -1,0 +1,10 @@
+@import '../../assets/scss/global_variables.scss';
+
+.terminal-background {
+    background-color: $terminal-background;
+}
+
+.command{
+    display: flex;
+    justify-content: left;
+}

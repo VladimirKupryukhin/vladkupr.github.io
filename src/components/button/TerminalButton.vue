@@ -24,7 +24,7 @@
 </template>
 
 
-<style>
+<style scoped>
     @import '../../assets/css/terminal_button.css';
     @import '../../assets/css/terminal_text.css';
 
