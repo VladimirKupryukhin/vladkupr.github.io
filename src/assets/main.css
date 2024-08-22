@@ -3,3 +3,9 @@
     font-family: Cascadia Code;
     text-decoration: none;
 }
+
+
+.dashed-border{
+    border:dashed white;
+    margin: 5px;
+}

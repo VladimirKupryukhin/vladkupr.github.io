@@ -8,8 +8,8 @@
         vlad@myWebsite:~/projects$ cat motherboard-like_pcb.txt
     </div>
 
-    <div class="box">
-        <div>
+    <div class="terminal-text dashed-border" >
+        <div style="margin: 5px;">
             some content here
         </div>
     </div>
@@ -19,8 +19,14 @@
 <style>
 @import '../assets/main.css';
 
+.dashed-border{
+    border:dashed white;
+    width: fit-content;
+    
+}
 
-.box {
+/* https://stackoverflow.com/questions/64114273/can-i-replace-css-borders-with-ascii-style-borders*/
+/*.box {
     height: fit-content;
     width: fit-content;
     border: 2px dashed red;
@@ -67,5 +73,5 @@
     font-weight: bold;
     font-size: 18px;
     color: red;
-}
+}*/
 </style>
