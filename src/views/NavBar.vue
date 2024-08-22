@@ -6,10 +6,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 <template>
-    <div class="test" style="border: 2px solid blue">
+    <div class="test" style="border: 2px solid bluse">
         <nav>
-            <RouterLink class="router-button" to="/">Home</RouterLink>
-            <RouterLink class="router-button" to="/about">About</RouterLink>
+            <RouterLink class="router-button" to="/"><b>Home</b></RouterLink>
+            <RouterLink class="router-button" to="/about"><b>About</b></RouterLink>
+            <RouterLink class="router-button" to="/projects"><b>Projects</b></RouterLink>
         </nav>
 
     </div>
@@ -22,8 +23,11 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 .router-button{
-    background-color: rgb(212, 28, 212);
+    font-family: Cascadia Code;
     margin: 5px;
+    font-size: x-large;
+    
+    text-decoration: none;
 }
 
 .button-container{
@@ -36,6 +40,17 @@ import { RouterLink, RouterView } from 'vue-router'
     align-items: center;
     justify-content: center;
 }
+
+nav a.router-link-exact-active {
+  color: rgb(49,52,60);
+  background-color: rgb(231, 231, 231);
+}
+
+nav a {
+    color: rgb(231, 231, 231);;
+    padding: 0 1rem;
+}
+
 
 </style>
 

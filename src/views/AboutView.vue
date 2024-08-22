@@ -1,9 +1,16 @@
+<script setup>
+</script>
+
 <template>
-  <div >
-    This is an about page
-  </div>
+  <main class="white-text">
+    <div class="terminal-text">
+      vlad@myWebsite:~/about$
+    </div>
+  </main>
 </template>
 
+
 <style>
+@import '../assets/main.css'
 
 </style>
