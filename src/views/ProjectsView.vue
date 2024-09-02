@@ -11,15 +11,9 @@ import { RouterLink, RouterView } from 'vue-router'
         <div>vlad@myWebsite:~/projects$ ls</div>
     </div>
 
-    <div >
-        <!--div class="blue-terminal-text ls-output">trickfire_codebase</div>
-        <div class="terminal-text ls-output">Sun/Solar Tracker for Solar Panel</div>
-        <div class="green-terminal-text ls-output">Motherboard-like PCB</div>
-        <div class="terminal-text ls-output">Implemented I2C</div>
-        <div class="green-terminal-text ls-output">UW DubHacks 2024 Hackathon</div-->
-
+    <div>
         <nav class="vertical-flex">
-            <RouterLink class="blue-terminal-text ls-output" to="/projects/trickfire_codebase">trickfire_codebase.txt</RouterLink>
+            <RouterLink class="blue-terminal-text ls-output" to="/projects/trickfire_codebase">trickfire_codebase.txt <-- Click Me!</RouterLink>
             <RouterLink class="green-terminal-text ls-output" to="/projects/sun_solar_tracker">sun_solar_panel_tracker.sh</RouterLink>
             <RouterLink class="terminal-text ls-output" to="/projects/motherboard_pcb">motherboard-like_pcb.txt</RouterLink>
             <RouterLink class="blue-terminal-text ls-output" to="/projects/custom_i2c">custom_i2c_implementation</RouterLink>
