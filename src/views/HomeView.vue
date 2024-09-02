@@ -8,9 +8,11 @@
       <div>vlad@myWebsite:~$</div>
       <div>vlad@myWebsite:~$ whoami</div>
 
+      <div id="divider" class="divider"></div>
+
       <div id="intro-content" class="flex-horizontal flex-center" style="sborder: 2px solid green;">
         <div class="vlad-img-div" style="sborder: 2px solid yellow;">
-          <img class="dashed-border vlad-img" src="../assets/images/vlad.png">  
+          <img class="my-dashed-border vlad-img" src="../assets/images/vlad.png">  
         </div>
 
         <div class="flex-vertical section-split" style="sborder: 2px solid orange;">
@@ -41,7 +43,7 @@
       <div class="flex-vertical flex-center">
           <div class="flex-horizontal flex-center"><h2>Software skills at a glance</h2></div>
             <div class="flex-horizontal flex-center">
-              <div class="dashed-border">
+              <div class="my-dashed-border">
                 <img class="img-style" src="../assets/images/c-plus-plus-logo.png">
                 <img class="img-style" src="../assets/images/docker-logo.png">
                 <img class="img-style" src="../assets/images/git-logo.png">
@@ -55,7 +57,7 @@
       <div class="flex-vertical flex-center">
           <div class="flex-horizontal flex-center"><h2>Hardware skills at a glance</h2></div>
             <div class="flex-horizontal flex-center">
-              <div class="dashed-border">
+              <div class="my-dashed-border">
                 <img class="img-style" src="../assets/images/scope.jpg">
                 <img class="img-style" src="../assets/images/function_gen.png">
                 <img class="img-style" src="../assets/images/multimeter.png">
@@ -211,7 +213,7 @@
 .vlad-img{
   width: fit-content;
   /*height: 80dvh;*/
-  height: 50em;
+  height: 40em;
   
 }
 
