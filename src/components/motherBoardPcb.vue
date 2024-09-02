@@ -4,74 +4,46 @@
 </script>
 
 <template>
-    <div class="terminal-text">
-        vlad@myWebsite:~/projects$ cat motherboard-like_pcb.txt
-    </div>
 
-    <div class="terminal-text dashed-border" >
-        <div style="margin: 5px;">
-            some content here
+    <div class="flex-vertical terminal-text">
+        <div class="">
+            vlad@myWebsite:~/projects$ cat motherboard-like_pcb.txt
+        </div>
+        
+        <div class="flex-horizontal flex-center section-split">
+            <div class="flex-vertical section-split my-dashed-border">
+                <div class="section-split">
+                    Together with a team of three, we created a PCB that hosts a Raspberry Pico MCU, six stepper motor controllers, six PWM ports for servo motors, three light controllers, and a 12v->5v buck converter. It is my responsibility to connect all of the logical devices together in order to program the microcontroller using bare-metal software. The MCU communicates to the main computer using USB; commands are sent to the Pico which controls the board.
+                </div>
+                <div class="flex-horizontal flex-center">
+                    <img class="schem-img" src="../assets/images/motherboard_schematic2.png"/>
+                </div>
+            </div>
+
+            <div class="flex-vertical section-split my-dashed-border">
+                <div class="section-split flex-horizontal flex-center">
+                    <img class="pcb-img" src="../assets/images/motherboard_pcb_traces.png"/>
+                </div>
+                <div class="flex-horizontal flex-center section-split">
+                    <img class="pcb-img" src="../assets/images/motherboard_pcb.png"/>
+                </div>
+            </div>
         </div>
     </div>
+
+
 
 </template>
 
 <style>
 @import '../assets/main.css';
 
-.dashed-border{
-    border:dashed white;
-    width: fit-content;
-    
+.schem-img{
+    height: 33em;
 }
 
-/* https://stackoverflow.com/questions/64114273/can-i-replace-css-borders-with-ascii-style-borders*/
-/*.box {
-    height: fit-content;
-    width: fit-content;
-    border: 2px dashed red;
-    margin: 0 auto;
-    position: relative;
-
+.pcb-img{
+    height: 19em
 }
 
-.box::after {
-    content: "+";
-    position: absolute;
-    left: -6px;
-    top: -13px;
-    font-weight: bold;
-    font-size: 18px;
-    color: red;
-}
-
-.box::before {
-    content: "+";
-    position: absolute;
-    right: -6px;
-    top: -13px;
-    font-weight: bold;
-    font-size: 18px;
-    color: red;
-}
-
-.box .inner::after {
-    content: "+";
-    position: absolute;
-    left: -6px;
-    bottom: -11px;
-    font-weight: bold;
-    font-size: 18px;
-    color: red;
-}
-
-.box .inner::before {
-    content: "+";
-    position: absolute;
-    right: -6px;
-    bottom: -11px;
-    font-weight: bold;
-    font-size: 18px;
-    color: red;
-}*/
 </style>
