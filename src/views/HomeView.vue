@@ -16,7 +16,8 @@
         </div>
 
         <div class="flex-vertical section-split" style="sborder: 2px solid orange;">
-          <pre class="ascii-hand flex-horizontal flex-center" style="sborder: 2px solid Green;" title="Art by Donovan Bake from https://www.asciiart.eu/people/body-parts/hand-gestures">
+          <div class=" flex-horizontal flex-center">
+            <pre class="ascii-hand" style="sborder: 2px solid Green;" title="Art by Donovan Bake from https://www.asciiart.eu/people/body-parts/hand-gestures">
 ( _\    /_ )
  \ _\  /_ / 
   \ _\/_ /_ _
@@ -26,6 +27,8 @@
    \/  ;   /
     | === |
             </pre>
+          </div>
+          
 
           <div class="flex-vertical ">
             <div style="sborder: 2px solid pink;" class="sdashed-border flex-horizontal whoami-text flex-center">Hello there my fellow friend!</div>
