@@ -9,7 +9,6 @@ import { RouterLink, RouterView } from 'vue-router'
     <div class="test" style="border: 2px solid bluse">
         <nav>
             <RouterLink class="router-button" to="/"><b>Home</b></RouterLink>
-            <RouterLink class="router-button" to="/about"><b>About</b></RouterLink>
             <RouterLink class="router-button" to="/projects"><b>Projects</b></RouterLink>
         </nav>
 
@@ -19,19 +18,15 @@ import { RouterLink, RouterView } from 'vue-router'
 
 </template>
 
-<style>
+<style scoped>
 
 
 .router-button{
     font-family: Cascadia Code;
-    margin: 5px;
+    padding: 0 1rem;
     font-size: x-large;
     
     text-decoration: none;
-}
-
-.button-container{
-    margin: 5px;
 }
 
 .test{

@@ -17,7 +17,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <RouterLink class="green-terminal-text ls-output" to="/projects/sun_solar_tracker">sun_solar_panel_tracker.sh</RouterLink>
             <RouterLink class="terminal-text ls-output" to="/projects/motherboard_pcb">motherboard-like_pcb.txt</RouterLink>
             <RouterLink class="blue-terminal-text ls-output" to="/projects/custom_i2c">custom_i2c_implementation</RouterLink>
-            <RouterLink class="terminal-text ls-output" to="/projects/uw_dubhacks_2024">uw_dubhacks_2024_hackathon</RouterLink>
+            <RouterLink class="terminal-text ls-output" to="/projects/uw_dubhacks_2024">uw_dubhacks_2023_hackathon</RouterLink>
 
         </nav>
     </div>
@@ -39,7 +39,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 .ls-output{
-    margin-left: 10px;
+    margin-left: 2em;
     width: fit-content
 }
 

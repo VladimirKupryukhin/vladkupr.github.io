@@ -5,7 +5,7 @@
 
 <template>
     <div class="flex-vertical terminal-text">
-        <div>vlad@myWebsite:~/projects$ cat uw_dubhacks_2024_hackathon</div>
+        <div>vlad@myWebsite:~/projects$ cat uw_dubhacks_2023_hackathon</div>
         <div class="flex-vertical flex-center">
             <div class="flex-horizontal flex-center text-margin section-split">
                 Together with three other students from UW Seattle, we created a system to send messages over Bluetooth to a browser. A Raspberry Pi Pico W was used as it has wireless capabilities. It was quite stressful trying to get Bluetooth to work within the 48 hours we had when none of us knew how Bluetooth worked! It was a stressful hackathon, but it was indeed fun!
