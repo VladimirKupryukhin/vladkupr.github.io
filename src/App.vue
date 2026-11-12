@@ -1,26 +1,35 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import Title from './views/Title.vue'
+import CommandInput from "./components/CommandInput.vue"
+import TerminalNavigation from "./components/TerminalNavigation.vue"
 // import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <div class="master-center">
-      <Title/>
+  <header class=div-center-squish>
+    <div class="">
+      <Title />
     </div>
 
-    <div class="master-center">
-      <nav>
-        <RouterLink class="navbar-master" to="/">Home</RouterLink>
-        <RouterLink class="navbar-master" to="/projects">Projects</RouterLink>
-        <RouterLink class="navbar-master" to="/profexp">Professional Experience</RouterLink>
-      </nav>
+    <div class="div-vertical">
+      <div class="">
+        <nav class="">
+          <TerminalNavigation/>
+
+
+          <!--RouterLink class="navbar-master sw-text" to="/">Home</RouterLink>
+          <RouterLink class="navbar-master sw-text" to="/projects">Projects</RouterLink>
+          <RouterLink class="navbar-master sw-text" to="/profexp">Professional Experience</RouterLink-->
+        </nav>
+      </div>
     </div>
 
+
+
+    <!--RouterView /-->
   </header>
 
-  <RouterView />
 </template>
 
 
@@ -31,6 +40,7 @@ import Title from './views/Title.vue'
     flex-wrap: wrap;
   }
 </style>
+
 
 
 <!-- <script setup lang="ts">

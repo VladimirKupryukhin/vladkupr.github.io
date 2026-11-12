@@ -48,3 +48,51 @@ a,
 .navbar-master{
   padding: 5px;
 }
+
+.div-vertical{
+  display: flex;
+  flex-direction: column;
+}
+
+.horizontal-div{
+  display:flex;
+  flex-direction: row;
+}
+
+.master-bg{
+  background-color: rgb(17,17,17);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #111111;
+  min-height: 100vh;
+  font-size: 15px;
+}
+
+.sw-text{
+  font-family:monospace;
+  color: #ebebeb
+}
+
+.sw-green{
+  font-family:monospace;
+  color: #0c8d00
+}
+
+
+
+.div-center-squish{
+  max-width: 50%;  /* X% of the screen/container width */
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+

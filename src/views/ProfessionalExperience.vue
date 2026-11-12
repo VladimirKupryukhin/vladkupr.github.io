@@ -4,13 +4,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 
 <template>
-    <div>
-        <h1>Professional experience goes here</h1>
-    </div>
-    <div>
+    <div class="">
         <nav>
-            <RouterLink class="navbar-master" to="/profexp/stryker">Stryker</RouterLink>
+            <RouterLink class="navbar-master sw-text" to="/profexp/stryker">Stryker</RouterLink>
         </nav>
+    </div>
+    <div class="sw-text">
+        <h1>Professional experience goes here</h1>
     </div>
     <RouterView />
 </template>

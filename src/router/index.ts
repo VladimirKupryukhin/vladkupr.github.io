@@ -8,46 +8,39 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView,
-    },
-    {
-      path: '/projects',
-      name: 'projects',
-      component: () => import('../views/ProjectList.vue'),
       children: [
         {
-          path: '/projects/craneaerospace',
-          name: 'projects-creneaerospace',
-          component: () => import('../views/projects/CraneAerospace.vue'),
+          path: '/projects',
+          name: 'projects',
+          component: () => import('../views/ProjectList.vue'),
+          children: [
+            {
+              path: '/projects/craneaerospace',
+              name: 'craneaerospace',
+              component: () => import('../views/projects/CraneAerospace.vue'),
+            },
+            {
+              path: '/projects/tfrmotherboard',
+              name: 'trickfire-motherboard',
+              component: () => import('../views/projects/TrickFireMotherBoard.vue'),
+            },
+          ]
         },
         {
-          path: '/projects/tfrmotherboard',
-          name: 'projects-tfrmotherboard',
-          component: () => import('../views/projects/TrickFireMotherBoard.vue'),
-        },
-      ]
-    },
-    {
-      path: '/profexp',
-      name: 'profexp',
-      component: () => import('../views/ProfessionalExperience.vue'),
-      children: [
-        {
-          path: '/profexp/stryker',
-          name: 'profexp-stryker',
-          component: () => import('../views/professional_exp/Stryker.vue'),
+          path: '/profexp',
+          name: 'professional-experience',
+          component: () => import('../views/ProfessionalExperience.vue'),
+          children: [
+            {
+              path: '/profexp/stryker',
+              name: 'stryker',
+              component: () => import('../views/professional_exp/Stryker.vue'),
+            },
+          ]
         },
       ]
     },
 
-    
-    // {
-    //   path: '/about',
-    //   name: 'about',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (About.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: () => import('../views/AboutView.vue'),
-    // },
   ],
 })
 
