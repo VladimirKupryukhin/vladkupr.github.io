@@ -3,7 +3,6 @@ import { RouterLink, RouterView } from 'vue-router'
 import Title from './views/Title.vue'
 import CommandInput from "./components/CommandInput.vue"
 import TerminalNavigation from "./components/TerminalNavigation.vue"
-// import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
@@ -14,15 +13,7 @@ import TerminalNavigation from "./components/TerminalNavigation.vue"
 
     <div class="div-vertical">
       <TerminalNavigation/>
-      <!--div class="">
-        <nav class="">
-          
-
-          <RouterLink class="navbar-master sw-text" to="/">Home</RouterLink>
-          <RouterLink class="navbar-master sw-text" to="/projects">Projects</RouterLink>
-          <RouterLink class="navbar-master sw-text" to="/profexp">Professional Experience</RouterLink>
-        </nav>
-      </div-->
+      
     </div>
 
 
