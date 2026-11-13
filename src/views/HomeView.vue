@@ -7,6 +7,6 @@ import CommandInput from "../components/CommandInput.vue"
 <template>
     <div class="master-center sw-text">
         <!--h1>This is a home page</h1-->
-        <GenericMarkdownRender markdownfilesource="/markdown/homepage/testmarkdown.md"/>
+        <GenericMarkdownRender markdownfilesource="/markdown/homepage/homepage.md"/>
     </div>
 </template>

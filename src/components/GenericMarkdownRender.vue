@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import MarkdownIt from "markdown-it"
-import { ref, useTemplateRef } from "vue"
+import { ref, useTemplateRef, onMounted } from "vue"
 
 // So this property assumes that all markdown is under the /markdown folder
 // This means that any local relative files paths are relative to the place 
@@ -12,24 +12,29 @@ const myproperties = defineProps<{
 
 const relativeFilePath = ".." + myproperties.markdownfilesource
 
+// console.log(relativeFilePath)
+
+// const markdownfilecontent = import.meta.glob("../markdown/homepage/testmarkdown.md",{
+//     query: '?raw',
+//     import: 'default',
+//     eager: true
+// });
+
 console.log(relativeFilePath)
 
-const markdownfilecontent = import.meta.glob("../markdown/homepage/testmarkdown.md",{
-    query: '?raw',
-    import: 'default',
-    eager: true
-});
+async function getMarkdown(filePath: string): Promise<string> {
+    const response = await fetch(filePath);
 
-console.log(markdownfilecontent)
+    if (!response.ok) {
+        throw new Error(`Failed to load Markdown: ${filePath}`);
+    }
 
-const actualcontent = markdownfilecontent["../markdown/homepage/testmarkdown.md"]
+    return await response.text();
+}
 
+var data = ""
 
-
-console.log(actualcontent)
-console.log(typeof(actualcontent))
-
-const htmlsource = ref(actualcontent)
+var htmlsource = ref(data)
 
 
 const markdown = new MarkdownIt({
@@ -44,6 +49,12 @@ const markdown = new MarkdownIt({
     // .use(MarkdownItSup)
     // .use(MarkdownItTasklists)
     // .use(MarkdownItTOC);
+
+onMounted(async () =>{
+    data = await getMarkdown(relativeFilePath)
+    console.log(data)
+    htmlsource.value = data
+})
 
 </script>
 

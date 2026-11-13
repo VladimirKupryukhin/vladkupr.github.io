@@ -106,10 +106,8 @@ onMounted(async () =>{
                 <RouterLink v-for="item in lsList" ref="routerLinkLSList" class="navbar-master sw-text ls-result" :to="item.path">{{ item.name }}</RouterLink>
             </div>
         </nav>
-
+        <RouterView/>
     </div>
-    
-    <RouterView/>
 </template>
 
 <style scoped>
