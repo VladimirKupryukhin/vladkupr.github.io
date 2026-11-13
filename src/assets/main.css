@@ -46,7 +46,7 @@ a,
 }
 
 .navbar-master{
-  padding: 5px;
+  padding: 2px;
 }
 
 .div-vertical{
@@ -68,7 +68,7 @@ html, body {
   padding: 0;
   background-color: #111111;
   min-height: 100vh;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 .sw-text{

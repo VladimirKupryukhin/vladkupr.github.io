@@ -1,3 +1,8 @@
+<script lang="ts">
+import TerminalNavigation from "../components/TerminalNavigation.vue"
+</script>
+
+
 <template>
     <div class="master-center sw-text">
         <h1>This is a home page</h1>

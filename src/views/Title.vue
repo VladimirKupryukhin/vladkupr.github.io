@@ -5,7 +5,7 @@
 <template>
     <div class="sw-text">
         <CommandInput command="whoami" class="mytitle"/>
-        <p class="mytitle">Vladimir Kupryukhin</p>
+        <p class="mytitle">Vladimir Kupryukhin - Embedded Guy</p>
     </div>
 
 </template>

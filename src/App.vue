@@ -13,21 +13,20 @@ import TerminalNavigation from "./components/TerminalNavigation.vue"
     </div>
 
     <div class="div-vertical">
-      <div class="">
+      <TerminalNavigation/>
+      <!--div class="">
         <nav class="">
-          <TerminalNavigation/>
+          
 
-
-          <!--RouterLink class="navbar-master sw-text" to="/">Home</RouterLink>
+          <RouterLink class="navbar-master sw-text" to="/">Home</RouterLink>
           <RouterLink class="navbar-master sw-text" to="/projects">Projects</RouterLink>
-          <RouterLink class="navbar-master sw-text" to="/profexp">Professional Experience</RouterLink-->
+          <RouterLink class="navbar-master sw-text" to="/profexp">Professional Experience</RouterLink>
         </nav>
-      </div>
+      </div-->
     </div>
 
 
 
-    <!--RouterView /-->
   </header>
 
 </template>
