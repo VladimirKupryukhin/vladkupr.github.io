@@ -40,6 +40,11 @@ const router = createRouter({
       name: 'stryker',
       component: () => import('../views/professional_exp/Stryker.vue'),
     },
+        {
+      path: '/blog',
+      name: 'blog',
+      component: () => import('../views/Blog.vue'),
+    },
 
   ],
 })
@@ -78,6 +83,11 @@ export const terminalPathHierarchy =
             children: []
           }
         ]
+      },
+      {
+        path: "/blog",
+        name: "blog",
+        children: []
       }
     ]
   }
