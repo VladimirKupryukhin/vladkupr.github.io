@@ -28,7 +28,7 @@ if (myproperties.breaks == "true"){
 //     eager: true
 // });
 
-console.log(relativeFilePath)
+// console.log(relativeFilePath)
 
 async function getMarkdown(filePath: string): Promise<string> {
     const response = await fetch(filePath);
@@ -60,7 +60,7 @@ const markdown = new MarkdownIt({
 
 onMounted(async () =>{
     data = await getMarkdown(relativeFilePath)
-    console.log(data)
+    // console.log(data)
     htmlsource.value = data
 })
 

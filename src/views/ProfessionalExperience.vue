@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import GenericMarkdownRender from "../components/GenericMarkdownRender.vue"
 </script>
 
 
 <template>
-    <div class="sw-text">
-        <h1>Professional experience goes here</h1>
+    <div class="msaster-center sw-text">
+        <!--h1>This is a home page</h1-->
+        <GenericMarkdownRender markdownfilesource="/markdown/prof-experience/prof-experience.md" breaks="true"/>
     </div>
 </template>
