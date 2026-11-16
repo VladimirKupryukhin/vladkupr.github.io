@@ -2,33 +2,23 @@
 import { full as emoji } from 'markdown-it-emoji'
 import MarkdownIt from "markdown-it"
 
-import { ref, useTemplateRef, onMounted } from "vue"
+import { ref, useTemplateRef, onMounted, watch } from "vue"
 
 // So this property assumes that all markdown is under the /markdown folder
 // This means that any local relative files paths are relative to the place 
 // where GenericMarkdownRender.vue live sin
-const myproperties = defineProps<{
+var myproperties = defineProps<{
     markdownfilesource: string,
     breaks: string
 }>()
 
 
-const relativeFilePath = ".." + myproperties.markdownfilesource
+var relativeFilePath = ".." + myproperties.markdownfilesource
 var shouldBreak = false
 
 if (myproperties.breaks == "true"){
     shouldBreak = true
 }
-
-// console.log(relativeFilePath)
-
-// const markdownfilecontent = import.meta.glob("../markdown/homepage/testmarkdown.md",{
-//     query: '?raw',
-//     import: 'default',
-//     eager: true
-// });
-
-// console.log(relativeFilePath)
 
 async function getMarkdown(filePath: string): Promise<string> {
     const response = await fetch(filePath);
@@ -44,7 +34,6 @@ var data = ""
 
 var htmlsource = ref(data)
 
-
 const markdown = new MarkdownIt({
     html: true,
     breaks: shouldBreak
@@ -58,10 +47,21 @@ const markdown = new MarkdownIt({
     // .use(MarkdownItTasklists)
     // .use(MarkdownItTOC);
 
-onMounted(async () =>{
+async function updateMarkdown(){
     data = await getMarkdown(relativeFilePath)
     // console.log(data)
     htmlsource.value = data
+}
+
+onMounted(async () =>{
+    await updateMarkdown()
+})
+
+// THis allows us to update the variable dynamically
+watch(() => myproperties.markdownfilesource, async (newData, oldData) => {
+    // myproperties.markdownfilesource = newData
+    relativeFilePath = ".." + myproperties.markdownfilesource 
+    await updateMarkdown()
 })
 
 </script>

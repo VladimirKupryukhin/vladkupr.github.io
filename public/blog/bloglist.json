@@ -1,0 +1,13 @@
+[
+    {
+        "date": "11-10-2026",
+        "title": "My goal for these blogs",
+        "blogmarkdown": "/blog/mygoalfortheseblogs.md"
+    },
+    {
+        "date": "11-16-2026",
+        "title": "My Thoughts on AI",
+        "blogmarkdown": "/blog/mythoughtsonai.md"
+    }
+
+]
