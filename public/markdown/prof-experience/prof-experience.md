@@ -1,16 +1,24 @@
 <br/>
-I am but a humble junior embedded engineer looking for something cool to work on!
-<br/><br/>
 
-I had the pleasure to work on projects that taught me the world of software within a FDA setting.
+I am but a humble junior embedded engineer looking for something to work on!
+
 <br/>
 
-Right after graduation, I had the pleasure to work at Stryker Medical which taught me just how important
-systemically testing really is. Here, I was also exposed to the complex world of writing software for
-very explicit standards set by the FDA. 
+While my professional career in this field is start starting, I have nevertheless applied my skills in
+large scale projects. Most notable is my four years are TrickFire Robotics at the University of Washington
+Bothell. Check out the projects section to read more about it!
+
 <br/>
 
-Once I graduated, I secured a contract position for 
-<br/>
+### Languages
+C, C++, C#, Python<br/>
+These are main languages, but once you know one language you know them all
 
-I had the pleasure to work with really good people at Stryker Medical in Redmond, WA.
+### Software
+Git, Perforce, Linux, Real-time OS Perforce, Atlassian Suit
+
+### Protocols
+I2C, UART, SPI
+
+### Hardware
+Logic Analyzers, Oscilloscopes, DMM, Power Supplies, Soldering
